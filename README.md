@@ -206,10 +206,10 @@ The read loop is header → body → room delivery → next header. A write star
 ```mermaid
 stateDiagram-v2
     [*] --> Connecting : async_accept
-    Connecting --> Active : Session::start()
+    Connecting --> Active : Session start
     Active --> Active : read_header then read_body then room.deliver
     Active --> Active : enqueue_write then write_next
-    Active --> Stopped : stop() — queue full, socket error, or close_all
+    Active --> Stopped : stop - queue full, socket error, or close_all
     Stopped --> [*] : socket closed and room.leave
 ```
 

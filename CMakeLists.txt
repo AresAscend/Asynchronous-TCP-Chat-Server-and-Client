@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(chat_room_cpp VERSION 2.0.0 LANGUAGES CXX)
+project("Asynchronous TCP Chat Server and Client" VERSION 2.0.0 LANGUAGES CXX)
 
 if(POLICY CMP0167)
     # Preserve the FindBoost fallback for header-only/tarball installations
