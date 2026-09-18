@@ -1,0 +1,20 @@
+# Build output directories
+build/
+build_ci/
+build-*/
+
+# Compiled binaries
+chatApp
+clientApp
+message_tests
+*.o
+
+# macOS metadata
+.DS_Store
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# CMake user-specific files
+CMakeUserPresets.json
